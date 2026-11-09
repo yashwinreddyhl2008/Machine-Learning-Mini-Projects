@@ -1,0 +1,36 @@
+
+PROJECT TITLE:
+Phishing Website Detection Using Machine Learning and Deep Learning
+
+1. PROBLEM STATEMENT
+
+Phishing websites are designed to deceive users into sharing sensitive information such as usernames, passwords, banking details and other personal information.
+
+Identifying phishing websites manually is difficult because they can closely resemble legitimate websites. Therefore, an automated method is required to identify suspicious website patterns and classify websites accurately.
+
+The main problem addressed by this project is to develop a classification system using Machine Learning and Deep Learning techniques that can analyze website-related features and predict whether a website belongs to class 0 or class 1.
+
+2. PROPOSED SOLUTION
+
+This project proposes a phishing website detection system using the following models:
+
+- Random Forest Classifier
+- Improved Random Forest Classifier using GridSearchCV
+- Artificial Neural Network (ANN)
+
+The models are trained using a dataset containing 10,000 records and 48 input features. Their performance is evaluated using accuracy, precision, recall, F1 score and confusion matrices.
+
+3. PROJECT OBJECTIVES
+
+- Analyze and preprocess the phishing website dataset.
+- Develop a Machine Learning classification model.
+- Improve model performance using hyperparameter tuning.
+- Develop a Deep Learning model using an Artificial Neural Network.
+- Compare the performance of Machine Learning and Deep Learning models.
+- Identify the model that provides the best classification performance.
+
+4. EXPECTED OUTCOME
+
+The expected outcome is a trained classification system capable of predicting the encoded class of a website based on its input features.
+
+The project also aims to demonstrate and compare the effectiveness of Machine Learning and Deep Learning techniques for website classification.

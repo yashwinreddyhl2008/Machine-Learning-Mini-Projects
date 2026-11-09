@@ -1,0 +1,19 @@
+PRODUCT BACKLOG
+PHISHING WEBSITE DETECTION PROJECT
+
+| ID | Task | Priority | Status |
+|---|---|---|---|
+| PB01 | Define problem statement | High | Completed |
+| PB02 | Collect and select dataset | High | Completed |
+| PB03 | Inspect dataset | High | Completed |
+| PB04 | Perform data preprocessing | High | Completed |
+| PB05 | Split training and testing data | High | Completed |
+| PB06 | Develop Random Forest model | High | Completed |
+| PB07 | Perform hyperparameter tuning | High | Completed |
+| PB08 | Develop ANN model | High | Completed |
+| PB09 | Evaluate classification models | High | Completed |
+| PB10 | Compare model performance | High | Completed |
+| PB11 | Prepare project documentation | High | In Progress |
+| PB12 | Organize project files | Medium | In Progress |
+| PB13 | Create GitHub repository | High | Pending |
+| PB14 | Prepare project demonstration and viva | High | Pending |

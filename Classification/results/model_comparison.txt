@@ -1,0 +1,12 @@
+PHISHING WEBSITE DETECTION
+MODEL PERFORMANCE COMPARISON
+
+                    Model  Accuracy  Precision  Recall  F1 Score
+            Random Forest     0.985     0.9889   0.981  0.984900
+   Improved Random Forest     0.985     0.9889   0.981  0.984900
+Artificial Neural Network     0.977     0.9751   0.979  0.977046
+
+CONCLUSION:
+The following models achieved the highest accuracy and F1 score: Random Forest, Improved Random Forest.
+
+The comparison uses the evaluation metrics saved by the individual model scripts.

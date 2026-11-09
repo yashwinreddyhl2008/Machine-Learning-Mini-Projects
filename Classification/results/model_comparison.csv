@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1 Score
+Random Forest,0.985,0.9889,0.981,0.9849
+Improved Random Forest,0.985,0.9889,0.981,0.9849
+Artificial Neural Network,0.977,0.9750996015936256,0.979,0.9770459081836328

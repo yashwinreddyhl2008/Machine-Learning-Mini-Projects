@@ -1,0 +1,72 @@
+
+PROJECT PLAN
+PHISHING WEBSITE DETECTION USING MACHINE LEARNING AND DEEP LEARNING
+
+1. PROJECT OVERVIEW
+
+Project Name: Phishing Website Detection
+Project Type: Classification
+Technologies: Python, Machine Learning, Deep Learning
+Dataset: Phishing_Legitimate_full.csv
+
+2. PROJECT GOALS
+
+- Develop a system to classify website-related data.
+- Implement Machine Learning classification algorithms.
+- Develop an Artificial Neural Network.
+- Compare the performance of ML and DL models.
+- Identify the best-performing model.
+
+3. PROJECT PHASES
+
+Phase 1: Planning
+- Define the problem statement.
+- Identify project objectives.
+- Select the dataset.
+- Prepare the project plan.
+- Prepare a weekly project progress report.
+- Monitor project development and update progress regularly.
+
+Phase 2: Data Collection and Analysis
+- Load the dataset.
+- Inspect dataset structure.
+- Identify missing values and duplicates.
+- Analyze the class distribution.
+
+Phase 3: Data Preprocessing
+- Separate input features and target.
+- Remove the ID column.
+- Split the dataset into 80% training and 20% testing sets using stratified sampling.
+- Scale features for ANN training.
+
+Phase 4: Machine Learning Development
+- Implement Random Forest.
+- Evaluate model performance.
+- Apply GridSearchCV for hyperparameter tuning.
+
+Phase 5: Deep Learning Development
+- Design an Artificial Neural Network.
+- Train the ANN using TensorFlow.
+- Evaluate its performance.
+
+Phase 6: Model Comparison
+- Compare accuracy, precision, recall and F1 score.
+- Generate comparison tables and graphs.
+- Identify the best-performing model.
+
+Phase 7: Documentation and Submission
+- Prepare project documentation.
+- Organize source code and result files.
+- Upload the project to GitHub.
+- Prepare for project demonstration and viva.
+
+4. EXPECTED DELIVERABLES
+
+- Dataset
+- Python source code
+- Trained ML and DL models
+- Evaluation reports
+- Confusion matrices
+- Model comparison graph
+- Project documentation
+- GitHub repository

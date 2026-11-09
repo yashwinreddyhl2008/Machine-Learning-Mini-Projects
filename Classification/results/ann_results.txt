@@ -1,0 +1,44 @@
+PROJECT: Phishing Website Detection
+MODEL: Artificial Neural Network
+
+DATASET INFORMATION:
+Total Records: 10000
+Training Samples: 8000
+Testing Samples: 2000
+Input Features: 48
+
+MODEL ARCHITECTURE:
+Input Layer: 48 features
+Hidden Layer 1: 128 neurons (ReLU)
+Dropout: 0.2
+Hidden Layer 2: 64 neurons (ReLU)
+Dropout: 0.2
+Hidden Layer 3: 32 neurons (ReLU)
+Output Layer: 1 neuron (Sigmoid)
+
+TRAINING DETAILS:
+Optimizer: Adam
+Loss: Binary Crossentropy
+Maximum Epochs: 100
+Batch Size: 32
+Early Stopping: Enabled
+
+MODEL PERFORMANCE:
+Accuracy: 0.9770
+Precision: 0.9751
+Recall: 0.9790
+F1 Score: 0.9770
+
+CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           0       0.98      0.97      0.98      1000
+           1       0.98      0.98      0.98      1000
+
+    accuracy                           0.98      2000
+   macro avg       0.98      0.98      0.98      2000
+weighted avg       0.98      0.98      0.98      2000
+
+CONFUSION MATRIX:
+[[975  25]
+ [ 21 979]]

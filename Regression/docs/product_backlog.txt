@@ -1,0 +1,21 @@
+PRODUCT BACKLOG
+REAL ESTATE PROPERTY PRICE PREDICTION PROJECT
+
+| ID | Task | Priority | Status |
+|---|---|---|---|
+| PB01 | Define problem statement | High | Completed |
+| PB02 | Collect and select dataset | High | Completed |
+| PB03 | Inspect dataset | High | Completed |
+| PB04 | Perform data preprocessing | High | Completed |
+| PB05 | Select relevant features | High | Completed |
+| PB06 | Split training and testing data | High | Completed |
+| PB07 | Develop baseline Linear Regression model | High | Completed |
+| PB08 | Develop Improved Linear Regression model | High | Completed |
+| PB09 | Implement Random Forest Regressor | High | Completed |
+| PB10 | Develop ANN Deep Learning model | High | Completed |
+| PB11 | Evaluate and compare all models | High | Completed |
+| PB12 | Prepare project documentation | High | In Progress |
+| PB13 | Organize project files | Medium | In Progress |
+| PB14 | Create GitHub repository | High | Pending |
+| PB15 | Prepare project demonstration and viva | High | Pending |
+| PB16 | Save trained models and generate evaluation reports | High | Completed |

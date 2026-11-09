@@ -1,0 +1,89 @@
+
+PROJECT PLAN
+REAL ESTATE PROPERTY PRICE PREDICTION USING MACHINE LEARNING AND DEEP LEARNING
+
+1. PROJECT OVERVIEW
+
+Project Name: Real Estate Property Price Prediction
+Project Type: Regression
+Technologies: Python, Machine Learning and Deep Learning
+Dataset: real_estate_data.csv
+Target Variable: Sale Price
+
+2. PROJECT GOALS
+
+- Develop a system to predict real estate property prices.
+- Analyze and preprocess property-related data.
+- Implement Machine Learning regression algorithms.
+- Develop an Artificial Neural Network.
+- Compare ML and DL model performance.
+- Identify the best-performing prediction model.
+
+3. PROJECT PHASES
+
+Phase 1: Planning
+- Define the problem statement.
+- Identify project objectives.
+- Select the dataset.
+- Prepare the project plan.
+
+Phase 2: Data Collection and Analysis
+- Load the real estate dataset.
+- Inspect dataset structure.
+- Identify missing values.
+- Understand the features and target variable.
+
+Phase 3: Data Preprocessing
+- Handle missing values.
+- Process categorical features.
+- Scale numerical features.
+- Select relevant input features.
+- Split data into training and testing sets.
+
+Phase 4: Machine Learning Development
+- Implement baseline Linear Regression.
+- Develop Improved Linear Regression.
+- Evaluate each model using regression evaluation metrics.
+- Compare the performance of the implemented regression algorithms.
+- Implement Random Forest Regressor.
+
+Phase 5: Deep Learning Development
+- Design an Artificial Neural Network.
+- Train the ANN using TensorFlow and Keras.
+- Apply EarlyStopping.
+- Evaluate the ANN model.
+
+Phase 6: Model Comparison
+- Compare MSE, RMSE, MAE and R².
+- Generate comparison tables and graphs.
+- Identify the best-performing model.
+
+Phase 7: Documentation and Submission
+- Prepare project documentation.
+- Organize source code and result files.
+- Upload the project to GitHub.
+- Prepare for project demonstration and viva.
+
+4. EXPECTED DELIVERABLES
+
+- Dataset
+- Python source code
+- Trained Machine Learning models
+- Trained ANN model
+- Evaluation reports
+- Model comparison graph
+- Project documentation
+- GitHub repository
+
+5. PROJECT TIMELINE
+
+- Week 4: Project initiation and planning.
+- Week 5: Data collection and exploratory data analysis.
+- Week 6: Data preprocessing and feature engineering.
+- Week 7: Baseline regression model development.
+- Week 8: Improved model development and evaluation.
+- Week 9: Machine Learning project review.
+- Week 10: Deep Learning model development.
+- Week 11: Model evaluation and status review.
+- Week 12: Documentation and project organization.
+- Week 13: Final project presentation.

@@ -1,0 +1,16 @@
+# CONCLUSION
+## PHISHING WEBSITE DETECTION USING MACHINE LEARNING AND DEEP LEARNING
+
+The Phishing Website Detection project demonstrates the application of Machine Learning and Deep Learning techniques to classify websites based on their features.
+
+Three models were implemented and evaluated: Random Forest Classifier, Improved Random Forest Classifier using GridSearchCV, and Artificial Neural Network (ANN).
+
+The Random Forest models achieved an accuracy of 98.50%, precision of 98.89%, recall of 98.10% and F1 score of 98.49%.
+
+The Artificial Neural Network achieved an accuracy of 97.70%, precision of 97.51%, recall of 97.90% and F1 score of 97.70%.
+
+Based on the experimental results, Random Forest achieved the best overall performance among the implemented models. Hyperparameter tuning selected the same configuration as the original Random Forest model, resulting in identical test performance.
+
+This project provided practical experience in dataset inspection, data preprocessing, feature preparation, classification algorithms, hyperparameter optimization, neural network development and model evaluation.
+
+Overall, the project demonstrates the usefulness of Machine Learning and Deep Learning techniques in website classification and cybersecurity-related applications.

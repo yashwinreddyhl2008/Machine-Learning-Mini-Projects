@@ -1,0 +1,18 @@
+# CONCLUSION
+**REAL ESTATE PROPERTY PRICE PREDICTION USING MACHINE LEARNING AND DEEP LEARNING**
+
+The Real Estate Property Price Prediction project demonstrates the use of Machine Learning and Deep Learning techniques to estimate property selling prices based on various property-related features.
+
+Four models were implemented and evaluated: Original Linear Regression, Improved Linear Regression, Random Forest Regressor and Artificial Neural Network.
+
+The Original Linear Regression model achieved an R² score of 0.642. The Improved Linear Regression model achieved an R² score of 0.70137, showing an improvement through better preprocessing and feature selection.
+
+The Random Forest Regressor achieved the best overall performance, with an RMSE of approximately ₹500,818.50 and an R² score of 0.71351.
+
+The Artificial Neural Network achieved an RMSE of approximately ₹519,611.67 and an R² score of 0.69161.
+
+Based on the experimental results, the Random Forest Regressor performed better than the other implemented models on the test dataset.
+
+This project provided practical experience in data analysis, preprocessing, feature engineering, regression algorithms, neural network development and model evaluation.
+
+Overall, the project demonstrates how Machine Learning and Deep Learning techniques can be applied to real estate property price prediction.

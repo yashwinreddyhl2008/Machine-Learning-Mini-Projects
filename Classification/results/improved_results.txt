@@ -1,0 +1,20 @@
+PROJECT: Phishing Website Detection
+MODEL: Tuned Random Forest Classifier
+
+Best Parameters: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+Best CV F1 Score: 0.9820
+
+MODEL PERFORMANCE:
+Accuracy: 0.9850
+Precision: 0.9889
+Recall: 0.9810
+F1 Score: 0.9849
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99      1000
+           1       0.99      0.98      0.98      1000
+
+    accuracy                           0.98      2000
+   macro avg       0.99      0.98      0.98      2000
+weighted avg       0.99      0.98      0.98      2000

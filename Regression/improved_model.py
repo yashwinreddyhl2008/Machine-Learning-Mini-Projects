@@ -1,0 +1,86 @@
+import pandas as pd
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+
+from sklearn.model_selection import train_test_split
+
+# Load dataset
+df = pd.read_csv("Regression/data/real_estate_data.csv")
+
+# Handle unknown property category
+df["Property"] = df["Property"].replace("?", pd.NA)
+
+# Select input features
+numerical_features = [
+    "Year",
+    "Estimated Value",
+    "num_rooms",
+    "num_bathrooms",
+    "carpet_area",
+    "property_tax_rate"
+]
+
+categorical_features = [
+    "Locality",
+    "Property",
+    "Residential",
+    "Face"
+]
+
+X = df[numerical_features + categorical_features]
+y = df["Sale Price"]
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+print("Training samples:", X_train.shape[0])
+print("Testing samples:", X_test.shape[0])
+
+# Numerical preprocessing
+numerical_transformer = Pipeline(steps=[
+    ("imputer", SimpleImputer(strategy="median")),
+    ("scaler", StandardScaler())
+])
+
+# Categorical preprocessing
+categorical_transformer = Pipeline(steps=[
+    ("imputer", SimpleImputer(strategy="most_frequent")),
+    ("encoder", OneHotEncoder(handle_unknown="ignore"))
+])
+
+# Combine preprocessing
+preprocessor = ColumnTransformer(transformers=[
+    ("num", numerical_transformer, numerical_features),
+    ("cat", categorical_transformer, categorical_features)
+])
+
+# Create complete ML pipeline
+model = Pipeline(steps=[
+    ("preprocessor", preprocessor),
+    ("regressor", LinearRegression())
+])
+
+# Train model
+model.fit(X_train, y_train)
+
+# Make predictions
+y_pred = model.predict(X_test)
+
+# Evaluate model
+mse = mean_squared_error(y_test, y_pred)
+rmse = mse ** 0.5
+mae = mean_absolute_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print("\nIMPROVED LINEAR REGRESSION RESULTS")
+print("---------------------------------")
+print("MSE:", mse)
+print("RMSE:", rmse)
+print("MAE:", mae)
+print("R2 Score:", r2)

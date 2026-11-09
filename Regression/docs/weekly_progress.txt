@@ -1,0 +1,72 @@
+WEEKLY PROJECT PROGRESS REPORT
+PROJECT: REAL ESTATE PROPERTY PRICE PREDICTION
+
+WEEK 4 – MINI PROJECT INITIATION
+- Selected the project topic: Real Estate Property Price Prediction.
+- Defined the project problem statement and objectives.
+- Identified the dataset requirements.
+- Prepared the initial project plan and product backlog.
+- Planned the project Git repository and weekly progress tracking.
+
+WEEK 5 – DATA COLLECTION AND EXPLORATORY DATA ANALYSIS
+- Collected the real estate dataset.
+- Studied the dataset structure and available features.
+- Performed initial data exploration.
+- Identified the target variable (Sale Price).
+- Examined the dataset to understand its characteristics.
+
+WEEK 6 – DATA PREPROCESSING AND FEATURE ENGINEERING
+- Inspected the dataset for missing values and outliers.
+- Performed data cleaning and handled missing values.
+- Applied suitable data transformation techniques.
+- Selected relevant features for prediction.
+- Split the dataset into training and testing sets.
+
+WEEK 7 – REGRESSION MODEL DEVELOPMENT
+- Studied the regression problem and linear regression algorithm.
+- Implemented the baseline Linear Regression model.
+- Trained the model using the prepared dataset.
+- Evaluated the model using regression evaluation metrics.
+- Explored additional regression algorithms.
+
+WEEK 8 – MODEL OPTIMIZATION AND EVALUATION
+- Improved the Linear Regression model using a preprocessing pipeline.
+- Implemented the Random Forest Regressor.
+- Evaluated the regression models and compared their performance.
+- Compared the performance of the regression algorithms.
+- Recorded the model evaluation results.
+
+WEEK 9 – MACHINE LEARNING PROJECT REVIEW
+- Reviewed the completed Machine Learning implementation.
+- Verified the preprocessing and model evaluation results.
+- Organized the results of the ML models.
+- Prepared the project for the Deep Learning implementation.
+
+WEEK 10 – MINI PROJECT ACTIVITY (2): DEEP LEARNING
+- Rebuilt the Regression project using an Artificial Neural Network (ANN).
+- Prepared the input data for the Deep Learning model.
+- Trained and evaluated the ANN model.
+- Compared the performance of Machine Learning and Deep Learning models.
+- Analysed the differences in their evaluation results.
+
+WEEK 11 – MINI PROJECT STATUS REVIEW
+- Reviewed the Deep Learning model implementation.
+- Verified the saved model and evaluation results.
+- Checked the performance comparison between ML and DL models.
+- Identified the best-performing model.
+
+WEEK 12 – MINI PROJECT STATUS REVIEW
+- Consolidated the project implementation and results.
+- Prepared the technical documentation.
+- Organized the project source files, models and output files.
+- Prepared the project for final review.
+
+WEEK 13 – FINAL PROJECT PRESENTATION
+- Prepare to present the project problem statement and objectives.
+- Prepare an explanation of the dataset, preprocessing and feature selection.
+- Prepare a demonstration of the Machine Learning and Deep Learning models.
+- Organize the performance comparison and evaluation results.
+- Prepare to explain the project conclusion and future scope.
+
+OVERALL PROJECT PROGRESS
+The project progressed from problem identification and data preparation to Machine Learning model development. A Deep Learning model was subsequently implemented, and its performance was compared with the Machine Learning models. Documentation and final presentation preparation are the remaining activities.

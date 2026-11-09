@@ -1,0 +1,212 @@
+
+PROJECT DOCUMENTATION
+REAL ESTATE PROPERTY PRICE PREDICTION USING MACHINE LEARNING AND DEEP LEARNING
+
+1. INTRODUCTION
+
+Real estate property prices depend on several factors, including location, property type, number of rooms, carpet area and estimated property value.
+
+Estimating property prices manually can be difficult because multiple features influence the final selling price.
+
+This project uses Machine Learning and Deep Learning techniques to predict real estate property selling prices based on available property information.
+
+2. OBJECTIVES
+
+- Analyze and preprocess real estate data.
+- Identify relevant features for property price prediction.
+- Implement a Linear Regression model.
+- Improve the regression model using preprocessing pipelines.
+- Implement a Random Forest Regressor.
+- Develop an Artificial Neural Network.
+- Evaluate and compare ML and DL models.
+- Identify the best-performing model.
+
+3. DATASET DESCRIPTION
+
+The project uses the real_estate_data.csv dataset.
+
+Dataset details:
+- Total records: 10,000
+- Total columns: 12
+- Target variable: Sale Price
+- Input features: Property-related attributes.
+
+The dataset contains missing values in Locality, Estimated Value and carpet_area.
+
+The target variable, Sale Price, is used to train the models to predict property prices.
+
+4. SOFTWARE AND HARDWARE REQUIREMENTS
+
+Software Requirements:
+- Operating System: Windows
+- Programming Language: Python
+- IDE: Visual Studio Code
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn and TensorFlow
+- Dataset: CSV format
+
+Hardware Requirements:
+- Processor: Intel or AMD processor
+- RAM: Minimum 4 GB (8 GB recommended)
+- Storage: Sufficient space for dataset, libraries and model files.
+
+5. METHODOLOGY
+
+The project follows these steps:
+
+1. Dataset collection.
+2. Dataset inspection.
+3. Data preprocessing.
+4. Feature selection.
+5. Training and testing data splitting.
+6. Machine Learning model development.
+7. Model evaluation and comparison.
+8. Deep Learning model development.
+9. Performance analysis.
+10. Documentation and result preparation.
+
+The dataset is divided into 80% training data and 20% testing data using random_state=42.
+
+6. DATA PREPROCESSING
+
+The dataset is inspected to identify missing values and understand its structure.
+
+Missing numerical values are handled using median imputation, while missing categorical values are handled using the most frequent value.
+
+Categorical features are converted into numerical representations using OneHotEncoder.
+
+Numerical features are standardized using StandardScaler.
+
+The improved preprocessing pipeline is fitted using training data to avoid data leakage.
+
+7. MACHINE LEARNING MODELS
+
+7.1 Linear Regression
+
+Linear Regression is a supervised Machine Learning algorithm used to predict continuous numerical values.
+
+The initial model uses selected property-related features to estimate the selling price.
+
+Baseline performance:
+- MSE: 313602652078.39
+- RMSE: 560002.37
+- MAE: 211209.12
+- R²: 0.642
+
+7.2 Improved Linear Regression
+
+The improved model uses a preprocessing pipeline with numerical imputation, categorical imputation, OneHotEncoder and StandardScaler.
+
+It uses a larger set of input features and a training-only preprocessing approach.
+
+Performance:
+- MSE: 261453738303.68
+- RMSE: 511325.47
+- MAE: 201252.09
+- R²: 0.70137
+
+7.3 Random Forest Regressor
+
+Random Forest is an ensemble learning algorithm that combines multiple decision trees to predict continuous values.
+
+It can capture complex relationships between property features and selling prices.
+
+Performance:
+- MSE: 250819168236.43
+- RMSE: 500818.50
+- MAE: 184681.14
+- R²: 0.71351
+
+8. DEEP LEARNING MODEL
+
+8.1 Artificial Neural Network (ANN)
+
+An Artificial Neural Network is a Deep Learning model inspired by the structure of the human brain.
+
+The implemented ANN contains:
+
+- Input features: 25 preprocessed features
+- Hidden layer 1: 128 neurons with ReLU activation
+- Hidden layer 2: 64 neurons with ReLU activation
+- Hidden layer 3: 32 neurons with ReLU activation
+- Output layer: 1 neuron with linear activation
+
+The model uses:
+- Optimizer: Adam
+- Loss function: Mean Squared Error
+- Batch size: 32
+- Maximum epochs: 100
+- Validation split: 0.2
+- EarlyStopping callback with patience 10
+
+Performance:
+- MSE: 269996291017.09
+- RMSE: 519611.67
+- MAE: 194152.23
+- R²: 0.69161
+
+9. MODEL EVALUATION
+
+The models are evaluated using the following metrics:
+
+Mean Squared Error (MSE):
+Measures the average squared difference between actual and predicted values.
+
+Root Mean Squared Error (RMSE):
+Measures prediction error in the same unit as the target variable.
+
+Mean Absolute Error (MAE):
+Measures the average absolute difference between actual and predicted values.
+
+R-squared (R²):
+Measures how well the model explains the variation in the target variable.
+
+10. PERFORMANCE COMPARISON
+
+The obtained results are:
+
+Model                         RMSE       R²
+Original Linear Regression    560002     0.642
+Improved Linear Regression    511325     0.701
+Random Forest Regressor       500819     0.714
+Artificial Neural Network     519612     0.692
+
+The Random Forest Regressor achieved the lowest RMSE and highest R² among the implemented models.
+
+11. RESULTS AND DISCUSSION
+
+The Artificial Neural Network achieved an RMSE of approximately 519612 and an R² score of 0.69161.
+
+Although the ANN performed better than the original Linear Regression model, it did not outperform the Improved Linear Regression and Random Forest models.
+
+This demonstrates that Deep Learning does not necessarily outperform traditional Machine Learning algorithms for every regression problem.
+
+12. APPLICATIONS
+
+- Real estate property price estimation.
+- Property valuation assistance.
+- Real estate market analysis.
+- Support for property buyers and sellers.
+- Preliminary price estimation for real estate agencies.
+
+13. FUTURE ENHANCEMENTS
+
+- Develop a web-based interface for property price prediction.
+- Include additional property-related features.
+- Explore more advanced regression algorithms.
+- Improve prediction accuracy through further optimization.
+- Deploy the trained model for practical use.
+- Integrate updated real estate market data.
+
+14. CONCLUSION
+
+The Real Estate Property Price Prediction project demonstrates the application of Machine Learning and Deep Learning techniques for predicting continuous numerical values.
+
+Four models were implemented: Original Linear Regression, Improved Linear Regression, Random Forest Regressor and Artificial Neural Network.
+
+Among these models, Random Forest achieved the best performance with an RMSE of approximately ₹500,819 and an R² score of 0.71351.
+
+The Artificial Neural Network achieved an RMSE of approximately ₹519,612 and an R² score of 0.69161.
+
+The project provided practical experience in data preprocessing, feature engineering, regression algorithms, neural network development and model evaluation.
+
+The results demonstrate that Machine Learning and Deep Learning techniques can be applied to real estate price prediction, with model performance depending on the dataset and algorithm used.

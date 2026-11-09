@@ -1,0 +1,39 @@
+
+PROJECT TITLE:
+Real Estate Property Price Prediction Using Machine Learning and Deep Learning
+
+1. PROBLEM STATEMENT
+
+Estimating the selling price of a real estate property is a challenging task because property prices depend on several factors, such as location, property type, number of rooms, carpet area and estimated property value.
+
+Traditional property price estimation methods may not always provide consistent or accurate results. Therefore, an automated approach is useful for analyzing property-related information and estimating suitable selling prices.
+
+The main problem addressed by this project is to develop a prediction system that uses Machine Learning and Deep Learning techniques to estimate the selling price of real estate properties based on their features.
+
+2. PROPOSED SOLUTION
+
+This project proposes a real estate property price prediction system using the following models:
+
+- Linear Regression
+- Improved Linear Regression with preprocessing pipelines
+- Random Forest Regressor
+- Artificial Neural Network (ANN)
+
+The models are trained using a real estate dataset containing 10,000 records and 12 columns. Their performance is evaluated using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE) and R-squared (R²).
+
+3. PROJECT OBJECTIVES
+
+- Analyze and preprocess the real estate dataset.
+- Identify the important features affecting property prices.
+- Develop a baseline Linear Regression model.
+- Improve preprocessing and model performance.
+- Implement a Random Forest Regression model.
+- Develop an Artificial Neural Network for price prediction.
+- Compare Machine Learning and Deep Learning performance.
+- Identify the best-performing prediction model.
+
+4. EXPECTED OUTCOME
+
+The expected outcome is a trained prediction system that estimates real estate property selling prices using the available property features.
+
+The project also aims to demonstrate and compare traditional Machine Learning algorithms and Deep Learning techniques for regression problems.

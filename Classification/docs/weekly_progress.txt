@@ -1,0 +1,72 @@
+WEEKLY PROJECT PROGRESS REPORT
+PROJECT: PHISHING WEBSITE DETECTION
+
+WEEK 4 – MINI PROJECT INITIATION
+- Selected the project topic: Phishing Website Detection.
+- Defined the project problem statement and objectives.
+- Identified the dataset requirements.
+- Prepared the initial project plan and product backlog.
+- Planned the project Git repository and weekly progress tracking.
+
+WEEK 5 – DATA COLLECTION AND EXPLORATORY DATA ANALYSIS
+- Collected the phishing website dataset.
+- Studied the dataset structure and available features.
+- Performed initial data exploration.
+- Identified the target variable (CLASS_LABEL).
+- Examined the distribution of the target classes.
+
+WEEK 6 – DATA PREPROCESSING AND FEATURE ENGINEERING
+- Inspected the dataset for missing values and duplicate records.
+- Examined the available input features.
+- Excluded the ID column from model training.
+- Prepared the input features and target variable.
+- Split the dataset into training and testing sets using stratification.
+
+WEEK 7 – CLASSIFICATION MODEL DEVELOPMENT
+- Studied supervised learning and classification algorithms.
+- Implemented the baseline Random Forest Classifier.
+- Trained the model using the prepared dataset.
+- Evaluated the model using accuracy, precision, recall and F1-score.
+- Generated the confusion matrix.
+
+WEEK 8 – MODEL OPTIMIZATION AND EVALUATION
+- Applied hyperparameter tuning using GridSearchCV.
+- Developed the improved Random Forest Classifier.
+- Evaluated the optimized model.
+- Compared the classification model results.
+- Recorded the evaluation metrics.
+
+WEEK 9 – MACHINE LEARNING PROJECT REVIEW
+- Reviewed the completed Machine Learning implementation.
+- Verified the dataset preparation and model evaluation.
+- Organized the classification model results.
+- Prepared the project for the Deep Learning implementation.
+
+WEEK 10 – MINI PROJECT ACTIVITY (2): DEEP LEARNING
+- Rebuilt the Classification project using an Artificial Neural Network (ANN).
+- Applied feature scaling to the input data.
+- Trained and evaluated the ANN model.
+- Compared the performance of Machine Learning and Deep Learning models.
+- Analysed the differences in their evaluation results.
+
+WEEK 11 – MINI PROJECT STATUS REVIEW
+- Reviewed the Deep Learning model implementation.
+- Verified the saved ANN model and evaluation results.
+- Checked the performance comparison between ML and DL models.
+- Identified the best-performing model.
+
+WEEK 12 – MINI PROJECT STATUS REVIEW
+- Consolidated the project implementation and results.
+- Prepared the technical documentation.
+- Organized the project source files, models and output files.
+- Prepared the project for final review.
+
+WEEK 13 – FINAL PROJECT PRESENTATION
+- Presented the project problem statement and objectives.
+- Explained the dataset and preprocessing techniques.
+- Demonstrated the Machine Learning and Deep Learning models.
+- Presented the model comparison and evaluation results.
+- Explained the project conclusion and future scope.
+
+OVERALL PROJECT PROGRESS
+The project progressed from problem identification and dataset exploration to Machine Learning model development and optimization. A Deep Learning model was subsequently implemented, and its performance was compared with the Machine Learning models. Documentation and final presentation preparation are the remaining activities.

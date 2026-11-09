@@ -1,0 +1,24 @@
+PROJECT: Phishing Website Detection
+MODEL: Random Forest Classifier
+
+DATASET:
+Total Records: 10000
+Training Samples: 8000
+Testing Samples: 2000
+Input Features: 48
+
+MODEL PERFORMANCE:
+Accuracy: 0.9850
+Precision: 0.9889
+Recall: 0.9810
+F1 Score: 0.9849
+
+CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99      1000
+           1       0.99      0.98      0.98      1000
+
+    accuracy                           0.98      2000
+   macro avg       0.99      0.98      0.98      2000
+weighted avg       0.99      0.98      0.98      2000

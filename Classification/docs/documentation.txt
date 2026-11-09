@@ -1,0 +1,206 @@
+
+PROJECT DOCUMENTATION
+PHISHING WEBSITE DETECTION USING MACHINE LEARNING AND DEEP LEARNING
+
+1. INTRODUCTION
+
+Phishing is a type of cyberattack in which attackers create deceptive websites to steal sensitive information such as usernames, passwords, banking details and personal data.
+
+Phishing websites are designed to appear similar to legitimate websites. Detecting these websites manually can be difficult. Machine Learning and Deep Learning techniques can help identify suspicious website patterns and classify websites automatically.
+
+This project develops a phishing website detection system using Machine Learning and an Artificial Neural Network.
+
+2. OBJECTIVES
+
+The main objectives of this project are:
+
+- To understand phishing website detection.
+- To analyze and prepare a phishing website dataset.
+- To implement a Random Forest classification model.
+- To improve model performance using hyperparameter tuning.
+- To develop an Artificial Neural Network model.
+- To compare Machine Learning and Deep Learning performance.
+- To evaluate the models using classification metrics.
+
+3. DATASET DESCRIPTION
+
+The project uses the Phishing_Legitimate_full.csv dataset.
+
+Dataset details:
+- Total records: 10,000
+- Total columns: 50
+- Input features used: 48
+- Target column: CLASS_LABEL
+- ID column: id
+
+The ID column is excluded from model training because it is an identifier rather than a predictive feature.
+
+The target column contains two encoded classes: 0 and 1.
+
+The dataset contains 5,000 records in each class, making the dataset balanced.
+
+4. SOFTWARE AND HARDWARE REQUIREMENTS
+
+Software Requirements:
+- Operating System: Windows
+- Programming Language: Python
+- IDE: Visual Studio Code
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn and TensorFlow
+- Dataset: CSV format
+
+Hardware Requirements:
+- Processor: Intel or AMD processor
+- RAM: Minimum 4 GB (8 GB recommended)
+- Storage: Sufficient space for dataset, libraries and model files
+
+5. METHODOLOGY
+
+The project follows these steps:
+
+1. Dataset collection
+2. Dataset inspection
+3. Data preprocessing
+4. Feature preparation 
+5. Training and testing data splitting
+6. Machine Learning model development
+7. Hyperparameter tuning
+8. Deep Learning model development
+9. Model evaluation
+10. Performance comparison
+
+The dataset is divided into 80% training data and 20% testing data using stratified splitting.
+
+6. DATA PREPROCESSING
+
+The dataset was inspected for missing values and duplicate records. No missing values or duplicate records were found. The ID and target columns were separated from the input features.
+
+A total of 48 numerical features were used for model training. The dataset was divided into training and testing sets using stratified splitting while maintaining the original class distribution.
+
+For the Artificial Neural Network, StandardScaler was used to scale the input features. The scaler was fitted only on the training data and then applied to the testing data.
+
+7. MACHINE LEARNING MODELS
+
+7.1 Random Forest Classifier
+
+Random Forest is an ensemble learning algorithm that combines multiple decision trees to perform classification.
+
+Each decision tree makes a prediction, and the final output is determined through majority voting.
+
+The implemented model uses 200 decision trees.
+
+7.2 Improved Random Forest Classifier
+
+GridSearchCV is used to find suitable hyperparameters for the Random Forest model.
+
+Five-fold cross-validation is used during the tuning process.
+
+The selected parameters are:
+
+- Number of estimators: 200
+- Maximum depth: None
+- Minimum samples split: 2
+- Minimum samples leaf: 1
+- Maximum features: sqrt
+
+The GridSearchCV process selected the same effective configuration as the baseline Random Forest model. Therefore, both models achieved identical performance on the testing dataset.
+
+The tuned model is evaluated using the same testing dataset.
+
+8. DEEP LEARNING MODEL
+
+8.1 Artificial Neural Network (ANN)
+
+An Artificial Neural Network is a Deep Learning model inspired by the structure of the human brain.
+
+The implemented ANN contains:
+
+- Input layer: 48 features
+- Hidden layer 1: 128 neurons with ReLU activation
+- Dropout layer: 0.2
+- Hidden layer 2: 64 neurons with ReLU activation
+- Dropout layer: 0.2
+- Hidden layer 3: 32 neurons with ReLU activation
+- Output layer: 1 neuron with Sigmoid activation
+
+The model uses:
+- Optimizer: Adam
+- Loss function: Binary Crossentropy
+- Evaluation metric: Accuracy
+- Batch size: 32
+- Maximum epochs: 100
+
+EarlyStopping is used to stop training when validation loss stops improving and to restore the best model weights.
+
+9. MODEL EVALUATION
+
+The models are evaluated using the following performance metrics:
+
+Accuracy:
+Measures the proportion of correctly classified predictions.
+
+Precision:
+Measures how many predicted positive cases are actually positive.
+
+Recall:
+Measures how many actual positive cases are correctly identified.
+
+F1 Score:
+Represents the harmonic mean of precision and recall.
+
+A confusion matrix is also generated to visualize correct and incorrect predictions.
+
+10. PERFORMANCE COMPARISON
+
+The obtained test results are:
+
+Model	                Accuracy	Precision	Recall	 F1 Score
+Random Forest	         98.50%	     98.89%	    98.10%	  98.49%
+Improved Random Forest	 98.50%	     98.89%	    98.10%	  98.49%
+ANN	                     97.70%	     97.51%	    97.90%	  97.70%
+
+Both Random Forest models correctly classified 1,970 out of 2,000 testing records, while the ANN correctly classified 1,954 records.
+
+The Random Forest and Improved Random Forest models achieved the same test performance.
+
+The Artificial Neural Network achieved an accuracy of 97.70%.
+
+Based on the obtained results, Random Forest achieved the highest performance across all four evaluation metrics.
+
+11. RESULTS AND DISCUSSION
+
+The experimental results show that the Random Forest classifier performs well on the selected dataset.
+
+Hyperparameter tuning selected the same configuration as the original Random Forest model. Therefore, both models produced identical test results.
+
+The Artificial Neural Network also achieved good classification performance, but its results were slightly lower than those of Random Forest.
+
+This experiment demonstrates that a Deep Learning model does not necessarily outperform a traditional Machine Learning model on every dataset.
+
+12. APPLICATIONS
+
+- Detection of suspicious websites
+- Cybersecurity systems
+- Browser security applications
+- Email and URL security analysis
+- Protection against online phishing attempts
+
+13. FUTURE ENHANCEMENTS
+
+- Develop a web-based interface for user interaction.
+- Integrate real-time website feature extraction.
+- Test the model using additional phishing website datasets.
+- Explore other Deep Learning architectures.
+- Deploy the trained model for practical use.
+- Improve detection performance on previously unseen websites.
+
+14. CONCLUSION
+
+The Phishing Website Detection project successfully demonstrates the application of Machine Learning and Deep Learning for binary classification.
+
+Random Forest, Improved Random Forest and Artificial Neural Network models were implemented and evaluated.
+
+Among the implemented models, Random Forest achieved the highest test accuracy of 98.50%, with an F1 score of 98.49%.
+
+The project provided practical experience in dataset analysis, preprocessing, model development, hyperparameter tuning, neural network training and performance evaluation.
+
+The results show that Machine Learning and Deep Learning techniques can be useful for identifying patterns associated with phishing websites.
